@@ -160,6 +160,7 @@ color: #f1f1f1;
  width: 100px;
  top:0;
 }
+
 .bottom-vids {
  height:230px;
  display: inline-block;
@@ -172,6 +173,7 @@ color: #f1f1f1;
  overflow-y: auto;
  width: 100%;
 }
+
 #bottom-vids {
  height:  230px;
  width: 250px;
