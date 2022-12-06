@@ -6,12 +6,10 @@ DAI2 = "?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=kCHAUn_
 
 BLOB_ACCOUNT = "https://blobstorageb00687152.blob.core.windows.net";
 
-document.getElementById("tall").onload = function(){
-  getVideos();
-}
 //Handlers for button clicks
 $(document).ready(function () {
 
+  getVideos();
 
   //Handler for the new asset submission button
   $("#subNewForm").click(function () {
@@ -59,20 +57,19 @@ function getVideos() {
     //Iterate through the returned records and build HTML, incorporating the key values of the record in the data
     $.each(data, function (key, val) {
       items.push("<hr />");
-      items.push("<video controls width='320' height='240' controls autoplay src='"+BLOB_ACCOUNT + val["filepath"] +"'type='video/mp4'/></video> <br />")
+      items.push("<video controls width='400' height='400' controls src='"+BLOB_ACCOUNT + val["filepath"] +"'type='video/mp4'/></video> <br />")
       items.push("<br />");
       items.push("File : " + val["fileName"] + "<br />");
-      items.push("Uploaded by: " + val["userName"] + " (user id: " + val["userID"] + ")<br />");
-      items.push("<button>Delete</button>")
+      items.push("Produced by: " + val["producer"] + "<br />");
       items.push("<hr />");
     });
     //Clear the assetlist div
-    $('#ImageList').empty();
+    $('#tall').empty();
     //Append the contents of the items array to the ImageList Div
     $("<ul/>", {
       "class": "my-new-list",
       html: items.join("")
-    }).appendTo("#ImageList");
+    }).appendTo("#tall");
   });
 }
 

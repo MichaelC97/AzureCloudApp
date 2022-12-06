@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Roboto&display=swap');
 body {
  background-color: #2f2f2f;
+ height: 100%
 }
 html {
  scroll-behavior: smooth;
@@ -9,6 +10,7 @@ html {
  overflow: hidden;
  position: absolute; 
  display: inline-block;
+ font-size: larger;
  top:0;
  left:0;
  right:0;
@@ -235,7 +237,13 @@ a {
  width: 400px;
  line-height: 1.7em;
 }
-
+.my-new-list{
+  color:azure;
+  text-align: center;
+}
+#Title{
+    color: red;
+}
 .bottom-vids2 {
  height:230px;
  display: inline-block;
@@ -253,6 +261,7 @@ a {
  width: 96%;
  display: inline-block;
  margin-left: 2.5em;
+ color: white;
  overflow-y: auto;
 }
 #tall {
@@ -261,5 +270,5 @@ a {
    width:300px;
 }
 #tall:hover {
- transform: scale(1.2);
+ transform: scale(1.01);
 }
