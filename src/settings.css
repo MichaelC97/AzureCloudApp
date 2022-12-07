@@ -21,7 +21,7 @@ body {
     margin: 8% auto 0;
     position: relative;
     z-index: 1;
-    border-top: 5px solid #f5ba1a;
+    border-top: 5px solid red;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -105,11 +105,11 @@ body {
     -webkit-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
     -moz-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
     box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
-    border: 1px solid #f5ba1a;
+    border: 1px solid red;
     background: #fafafa;
   }
   .form_wrapper input[type=submit] {
-    background: #f5ba1a;
+    background: red;
     height: 35px;
     line-height: 35px;
     width: 100%;
@@ -266,10 +266,10 @@ body {
     z-index: 1;
     text-align: center;
     padding: 15px;
-    color: #f5ba1a;
+    color: red;
   }
   .credit a {
-    color: #e1a70a;
+    color: red;
   }
   
   @-webkit-keyframes check {

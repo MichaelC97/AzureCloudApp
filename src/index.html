@@ -1,16 +1,47 @@
 <head>
   <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="JS/bootstrap.js"></script>
+  <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="JS/app.js"></script>
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
 </head>
 
 <header class="showcase">
   <div class="showcase-top">
     <h1 class = "Title">Flix.NET</h1>
-    <a href="HomePage.html" class="btn btn-rounded">Sign In</a>
+    <a href="#"><button class="open-button" onclick="openForm()">Sign In</button></a>
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>Login</h1>
+    
+        <label class ="userEmail" for="email"><b>Email</b></label>
+        <input type="text"  id = "userEmail" placeholder="Enter Email" name="email" required>
+    
+        <label class = "userPassword" for="psw"><b>Password</b></label>
+        <input type="password" id = "userPassword" placeholder="Enter Password" name="psw" required>
+    
+        <button type="button" class="btnLogin" onclick = "checkLogin()">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
   </div>
+
   <div class="showcase-content">
     <h1>See what's next</h1>
     <p>Watch anywhere. Cancel Anytime</p>
     <a href="#" class="btn btn-xl">Watch Free For 30 Days <i class="fas fa-chevron-right btn-icon"></i></a>
+    <a href = "settings.html" ><button class ="btnLook" >Sign Up</button></a>
+
   </div>
 </header>
 <section class="tabs">
@@ -28,70 +59,6 @@
       <p class="hide-sm">Pick your price</p>
     </div>
   </div>
-</section>
-<section class="tab-content">
-  <div class="container">
-    <!-- Tab Content 1 -->
-    <div id="tab-1-content" class="tab-content-item show">
-      <div class="tab-1-content-inner">
-        <div>
-          <p class="text-lg">
-            If you decide Netflix isn't for you - no problem. No commitment.
-            Cancel online anytime.
-          </p>
-          <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
-        </div>
-        <img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="" />
-      </div>
-    </div>
-    <!-- Tab Content 2 -->
-    <div id="tab-2-content" class="tab-content-item">
-      <div class="tab-2-content-top">
-        <p class="text-lg">
-          Watch TV shows and movies anytime, anywhere — personalized for
-          you.
-        </p>
-        <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
-      </div>
-      <div class="tab-2-content-bottom">
-        <div>
-          <img src="https://i.ibb.co/DpdN7Gn/tab-content-2-1.png" alt="" />
-          <p class="text-md">
-            Watch on your TV
-          </p>
-          <p class="text-dark">
-            Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
-            players and more.
-          </p>
-        </div>
-        <div>
-          <img src="https://i.ibb.co/R3r1SPX/tab-content-2-2.png" alt="" />
-          <p class="text-md">
-            Watch instantly or download for later
-          </p>
-          <p class="text-dark">
-            Available on phone and tablet, wherever you go.
-          </p>
-        </div>
-        <div>
-          <img src="https://i.ibb.co/gDhnwWn/tab-content-2-3.png" alt="" />
-          <p class="text-md">
-            Use any computer
-          </p>
-          <p class="text-dark">
-            Watch right on Netflix.com.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- Tab Content 3 -->
-    <div id="tab-3-content" class="tab-content-item">
-      <div class="text-center">
-        <p class="text-lg">
-          Choose one plan and watch everything on Netflix.
-        </p>
-        <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
-      </div>
-    </div>
-  </div>
+
+
 </section>
