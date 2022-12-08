@@ -462,7 +462,6 @@ img {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
-  width: auto;
 }
 
 .btnLook:hover,
