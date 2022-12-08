@@ -39,21 +39,13 @@ function submitNewAsset() {
   submitData = new FormData();
   //Get form variables and append them to the form data object
   submitData.append('FileName', $('#FileName').val());
-  console.log($('#FileName').val())
   submitData.append('userID', $('#userID').val());
-  console.log($('#userID').val())
   submitData.append('userName', $('#userName').val());
-  console.log($('#userName').val())
   submitData.append('title', $('#title').val());
-  console.log($('#title').val())
   submitData.append('genre', $('#genre').val());
-  console.log($('#genre').val())
   submitData.append('ageRating', $('#ageRating').val());
-  console.log($('#ageRating').val())
   submitData.append('producer', $('#producer').val());
-  console.log($('#producer').val())
   submitData.append('publisher', $('#publisher').val());
-  console.log($('#publisher').val())
   submitData.append('File', $("#UpFile")[0].files[0]);
 
   //Post the form data to the endpoint, note the need to set the content type header
@@ -190,15 +182,11 @@ function checkLogin() {
     type: 'POST',
     success: function (userData) {
 
-      console.log(userData)
       sessionStorage.setItem("userID", userData[0].userID);
       sessionStorage.setItem("checkAdmin", userData[0].userType);
       sessionStorage.setItem('userEmail', userData[0].userEmail);
       sessionStorage.setItem("userPassword", userData[0].userPassword);
       sessionStorage.setItem('userFName', userData[0].userFName);
-      console.log(userData[0].userFName);
-      console.log(userData[0].userLName);
-      console.log(userData[0].usrCountry);
       sessionStorage.setItem("userLName", userData[0].userLName);
       sessionStorage.setItem("usrCountry", userData[0].usrCountry);
 
@@ -263,17 +251,10 @@ function addNewUser() {
 //A function to submit a new asset to the REST endpoint
 function updateUser(userID) {
   //Create a form data object
-  console.log(userID)
-  // var userEmail = document.getElementById("userEmail").value;
-  // var userPassword =  document.getElementById("userPassword").value;
-  // var userFName = document.getElementById("userFName").value;
-  // var userLName =  document.getElementById("userLName").value;
-  // var usrCountry = document.getElementById("usrCountry").value;
 
   if(document.getElementById("userEmail").value.length == 0 && document.getElementById("userPassword").value.length != 0  ){
     userEmail = sessionStorage.getItem("userEmail");
     userPassword = document.getElementById("userPassword").value;
-    console.log(userEmail);
   }
   else if(document.getElementById("userPassword").value.length == 0 && document.getElementById("userEmail").value.length != 0 ){
     userPassword = sessionStorage.getItem("userPassword");
