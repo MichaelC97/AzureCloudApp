@@ -1,3 +1,12 @@
+import { ApplicationInsights } from '@microsoft/applicationinsights-web'
+
+const appInsights = new ApplicationInsights({ config: {
+  connectionString: 'InstrumentationKey=7ec4779a-a2e8-44bd-89db-6628b185325c;IngestionEndpoint=https://northeurope-3.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/'
+  /* ...Other Configuration Options... */
+} });
+appInsights.loadAppInsights();
+appInsights.trackPageView(); // Manually call trackPageView to establish the current user/session/pageview
+
 //The URIs of the REST endpoint
 IUPS = "https://prod-28.ukwest.logic.azure.com:443/workflows/65eeab54aca04f07a6769e981e31683e/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=URIw0cWB0pod6wvRscvMGqzUWO_XzZAztzhgRkrx_Es";
 RAI = "https://prod-14.ukwest.logic.azure.com:443/workflows/321c3e772e244378b567e19bec2748c8/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=4jlatqW-ZZl9QTZ7gt8-Ti1HbbYI7mJGnyexYDdxJow";
