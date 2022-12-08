@@ -1,4 +1,4 @@
-import { ApplicationInsights } from '@microsoft/applicationinsights-web'
+const ApplicationInsights = require('@microsoft/applicationinsights-web');
 
 const appInsights = new ApplicationInsights({ config: {
   connectionString: 'InstrumentationKey=7ec4779a-a2e8-44bd-89db-6628b185325c;IngestionEndpoint=https://northeurope-3.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/'
