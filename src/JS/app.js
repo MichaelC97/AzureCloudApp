@@ -150,10 +150,10 @@ function getUserInfo() {
     var items = [];
     //Iterate through the returned records and build HTML, incorporating the key values of the record in the data
 
-      items.push("UserName: " + sessionStorage.getItem("userFName") + " " + sessionStorage.getItem("userLName"))
-      items.push("<br />");
-      items.push("Email : " + sessionStorage.getItem("userEmail") + "<br />");
-      items.push("Country: " + sessionStorage.getItem("usrCountry") + "<br />");
+      //items.push("UserName: " + sessionStorage.getItem("userFName") + " " + sessionStorage.getItem("userLName"))
+      //items.push("<br />");
+      //items.push("Email : " + sessionStorage.getItem("userEmail") + "<br />");
+      //items.push("Country: " + sessionStorage.getItem("usrCountry") + "<br />");
 
     //Clear the assetlist div
     $('#userProfile').empty();
