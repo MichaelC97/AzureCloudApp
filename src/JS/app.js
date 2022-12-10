@@ -1,9 +1,9 @@
 //The URIs of the REST endpoint
-IUPS = "https://prod-28.ukwest.logic.azure.com:443/workflows/65eeab54aca04f07a6769e981e31683e/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=URIw0cWB0pod6wvRscvMGqzUWO_XzZAztzhgRkrx_Es";
-RAI = "https://prod-14.ukwest.logic.azure.com:443/workflows/321c3e772e244378b567e19bec2748c8/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=4jlatqW-ZZl9QTZ7gt8-Ti1HbbYI7mJGnyexYDdxJow";
+IUPS = "https://prod-28.ukwest.logic.azure.com/workflows/65eeab54aca04f07a6769e981e31683e/triggers/manual/paths/invoke/rest/v1/videos?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=URIw0cWB0pod6wvRscvMGqzUWO_XzZAztzhgRkrx_Es";
+RAI = "https://prod-14.ukwest.logic.azure.com/workflows/321c3e772e244378b567e19bec2748c8/triggers/manual/paths/invoke/rest/v1/videos?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=4jlatqW-ZZl9QTZ7gt8-Ti1HbbYI7mJGnyexYDdxJow";
 DAI1 = "https://prod-26.centralus.logic.azure.com/workflows/fdc9a2f928b54c09becea7a11f9fe6e6/triggers/manual/paths/invoke/rest/v1/video/"
 DAI2 = "?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=O3y4iXKoAn5IJbPUAOJgu_z3UJRBPMH8OfS_RH-Rul0"
-checkUser = "https://prod-10.ukwest.logic.azure.com:443/workflows/c1f917df9fa24242bbb5e499d6faf22b/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Ja7KxurOLUdqo7PPKuEJtCJo1yaMa5lLNk4niKkGXos"
+checkUser = "https://prod-10.ukwest.logic.azure.com/workflows/c1f917df9fa24242bbb5e499d6faf22b/triggers/manual/paths/invoke/rest/v1/password?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Ja7KxurOLUdqo7PPKuEJtCJo1yaMa5lLNk4niKkGXos"
 BLOB_ACCOUNT = "https://blobstorageb00687152.blob.core.windows.net";
 userAdd = "https://prod-21.ukwest.logic.azure.com/workflows/5944ee3cce7c4f048bcc92ba1da2af31/triggers/manual/paths/invoke/rest/v1/users?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qaedHVLY8qYrjw7p_qoGT9f3C7ZM2OdEFdkOKLQ1MAQ"
 userUpdate = "https://prod-09.ukwest.logic.azure.com/workflows/738d4495294a4150b2fd92376777e5d6/triggers/manual/paths/invoke/rest/v1/videos/"
