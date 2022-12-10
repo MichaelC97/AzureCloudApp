@@ -135,7 +135,7 @@ input:focus, textarea:focus {
 	color: #0493bd;
 }
 
-#button-blue{
+#button-red{
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
 	width: 100%;
@@ -153,7 +153,7 @@ input:focus, textarea:focus {
   font-weight:700;
 }
 
-#button-blue:hover{
+#button-red:hover{
 	background-color: rgba(0,0,0,0);
 	color: coral;
 }
