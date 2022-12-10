@@ -24,6 +24,11 @@ $(document).ready(function () {
     //Execute the submit new asset function
     submitNewAsset();
   });
+    //Handler for the new asset submission button
+    $("#button-red").click(function () {
+      //Execute the submit new asset function
+      window.location = "HomePage.html"
+    });
   $("#btnCancel").click(function () {
     window.location = "HomePage.html"
   });
@@ -58,7 +63,7 @@ function submitNewAsset() {
     processData: false,
     type: 'POST',
     success: function (data) {
-
+      alert("New Video Added!")
     }
   });
 }
